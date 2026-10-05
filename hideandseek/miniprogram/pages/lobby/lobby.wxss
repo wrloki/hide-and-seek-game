@@ -1,0 +1,16 @@
+.player-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #2a2a4a;
+}
+
+.role-tag {
+  color: #e94560;
+}
+
+.waiting {
+  text-align: center;
+  color: #b8c1ec;
+  margin-top: 40rpx;
+}

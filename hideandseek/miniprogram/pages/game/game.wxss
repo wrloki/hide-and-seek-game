@@ -1,0 +1,89 @@
+.game-wrap {
+  height: 100vh;
+  position: relative;
+}
+
+.game-map {
+  width: 100%;
+  height: 100vh;
+}
+
+.hud {
+  position: absolute;
+  top: 16rpx;
+  left: 16rpx;
+  right: 16rpx;
+  background: rgba(15, 20, 40, 0.88);
+  border-radius: 16rpx;
+  padding: 20rpx 24rpx;
+}
+
+.hud-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+  font-size: 28rpx;
+}
+
+.role.cat {
+  color: #e94560;
+  font-weight: 700;
+}
+
+.role.mouse {
+  color: #4cc9f0;
+  font-weight: 700;
+}
+
+.status {
+  font-size: 24rpx;
+  color: #b8c1ec;
+}
+
+.bottom-bar {
+  position: absolute;
+  left: 24rpx;
+  right: 24rpx;
+  bottom: 48rpx;
+}
+
+.center {
+  text-align: center;
+  background: rgba(15, 20, 40, 0.88);
+  padding: 20rpx;
+  border-radius: 12rpx;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.modal {
+  width: 80%;
+  background: #1a1a2e;
+  border-radius: 20rpx;
+  padding: 40rpx 32rpx;
+}
+
+.modal-title {
+  font-size: 44rpx;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16rpx;
+}
+
+.modal-body {
+  text-align: center;
+  color: #b8c1ec;
+  margin-bottom: 32rpx;
+  line-height: 1.6;
+}

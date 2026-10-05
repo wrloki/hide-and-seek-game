@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="title">房间 {{roomId}}</view>
+  <view class="subtitle">把房间号念给朋友听，让他们在首页输入并加入。</view>
+
+  <view class="card">
+    <view>人数：{{players.length}}</view>
+    <view wx:for="{{players}}" wx:key="id" class="player-row">
+      <text>{{item.nickname}}</text>
+      <text class="role-tag">{{item.id === myId ? '（我）' : ''}}{{item.isHost ? ' 房主' : ''}}</text>
+    </view>
+  </view>
+
+  <view class="tip">角色会在开始游戏时随机分配：1 只猫（抓捕者），其余是鼠（躲藏者）。</view>
+
+  <button wx:if="{{isHost}}" class="btn btn-primary" bindtap="startGame">
+    开始游戏
+  </button>
+  <view wx:else class="waiting">等待房主开始...</view>
+</view>

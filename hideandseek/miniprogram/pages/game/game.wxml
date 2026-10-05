@@ -1,0 +1,41 @@
+<view class="game-wrap">
+  <map
+    class="game-map"
+    latitude="{{latitude || 39.9042}}"
+    longitude="{{longitude || 116.4074}}"
+    scale="17"
+    show-location="{{true}}"
+    markers="{{markers}}"
+    include-points="{{includePoints}}"
+  ></map>
+
+  <view class="hud">
+    <view class="hud-row">
+      <text>房间 {{roomId}}</text>
+      <text class="role {{myRole}}">{{myRole === 'cat' ? '你是猫（抓捕）' : '你是鼠（躲藏）'}}</text>
+    </view>
+    <view class="hud-row">
+      <text wx:if="{{phase === 'countdown'}}">开局倒计时 {{countdown}} 秒</text>
+      <text wx:elif="{{phase === 'playing'}}">剩余 {{remain}} 秒 · 未抓 {{aliveMice}} 只鼠</text>
+      <text wx:elif="{{phase === 'ended'}}">游戏结束</text>
+      <text wx:else>等待开始</text>
+    </view>
+    <view class="status">{{statusText}}</view>
+  </view>
+
+  <view class="bottom-bar">
+    <button class="btn btn-primary" bindtap="onEnableLocation" wx:if="{{!locating}}">
+      开启定位并开始上传
+    </button>
+    <view wx:else class="tip center">定位已开，正在把坐标发给服务器</view>
+  </view>
+
+  <!-- 胜负弹窗 -->
+  <view class="mask" wx:if="{{showResult}}">
+    <view class="modal">
+      <view class="modal-title">{{resultTitle}}</view>
+      <view class="modal-body">{{resultText}}</view>
+      <button class="btn btn-primary" bindtap="backHome">返回首页</button>
+    </view>
+  </view>
+</view>

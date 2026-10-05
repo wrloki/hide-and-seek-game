@@ -1,0 +1,17 @@
+.map {
+  width: 100%;
+  height: 520rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+}
+
+.addr {
+  margin-top: 12rpx;
+  color: #b8c1ec;
+  word-break: break-all;
+}
+
+.demo-page {
+  padding-bottom: 40rpx;
+}

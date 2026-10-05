@@ -1,0 +1,35 @@
+<!-- 单人定位 Demo：必须点按钮才申请定位 -->
+<view class="page demo-page">
+  <view class="title">单人定位练习</view>
+  <view class="subtitle">先确认手机能拿到经纬度，再去和朋友联机。</view>
+
+  <button class="btn btn-primary" bindtap="onEnableLocation">
+    开启定位（点我才申请权限）
+  </button>
+  <button class="btn btn-ghost" bindtap="onStopLocation" wx:if="{{watching}}">
+    停止定位
+  </button>
+
+  <view class="card">
+    <view>状态：{{statusText}}</view>
+    <view>纬度 latitude：{{latitude || '还没有'}}</view>
+    <view>经度 longitude：{{longitude || '还没有'}}</view>
+    <view>大概精度：{{accuracy ? accuracy + ' 米' : '还没有'}}</view>
+    <view class="addr">地址：{{address}}</view>
+  </view>
+
+  <!-- 微信原生地图组件，底层是腾讯地图 -->
+  <map
+    wx:if="{{latitude}}"
+    class="map"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    scale="17"
+    show-location="{{true}}"
+    markers="{{markers}}"
+  ></map>
+
+  <view class="tip">
+    苹果和安卓都请到户外或窗边测试。室内 GPS 可能很飘，这是手机硬件限制，不是代码写错。
+  </view>
+</view>

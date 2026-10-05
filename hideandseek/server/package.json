@@ -1,0 +1,12 @@
+{
+  "name": "hideandseek-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GPS躲猫猫房间与位置同步服务（给初中生看的注释版）",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/lobby/lobby",
+    "pages/game/game"
+  ],
+  "window": {
+    "navigationBarTitleText": "线下户外位置协作",
+    "navigationBarBackgroundColor": "#1a1a2e",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#16213e",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "线下户外聚会协作，点击按钮获取位置，实现好友房间位置共享"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}

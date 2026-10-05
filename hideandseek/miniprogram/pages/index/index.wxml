@@ -1,0 +1,37 @@
+<!-- 首页：先做定位练习，再进房间联机 -->
+<view class="page">
+  <view class="hero">🐱🐭</view>
+  <view class="title">线下 GPS 躲猫猫</view>
+  <view class="subtitle">Moonstone 青少年黑客松 · 真人户外定位游戏</view>
+
+  <view class="card">
+    <view class="label">你的昵称</view>
+    <input
+      class="input"
+      placeholder="例如：小明"
+      maxlength="10"
+      value="{{nickname}}"
+      bindinput="onNickname"
+    />
+  </view>
+
+  <button class="btn btn-primary" bindtap="goDemo">第一步：单人定位练习</button>
+  <button class="btn btn-secondary" bindtap="createRoom">创建房间</button>
+
+  <view class="card">
+    <view class="label">已有房间号？输入 4 位数字加入</view>
+    <input
+      class="input"
+      type="number"
+      maxlength="4"
+      placeholder="例如：4821"
+      value="{{roomCode}}"
+      bindinput="onRoomCode"
+    />
+    <button class="btn btn-secondary" bindtap="joinRoom">加入房间</button>
+  </view>
+
+  <view class="tip">
+    隐私说明：打开小程序不会定位。只有你点“开启定位”后，微信才会弹出授权。
+  </view>
+</view>

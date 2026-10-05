@@ -1,0 +1,11 @@
+.hero {
+  font-size: 80rpx;
+  text-align: center;
+  margin: 20rpx 0 12rpx;
+}
+
+.label {
+  font-size: 26rpx;
+  color: #b8c1ec;
+  margin-bottom: 12rpx;
+}

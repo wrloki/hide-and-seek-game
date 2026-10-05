@@ -1,0 +1,81 @@
+/* 全局样式：给初中生看的大按钮、深色夜游风格 */
+
+page {
+  background-color: #16213e;
+  color: #f1f1f1;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 32rpx;
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #b8c1ec;
+  margin-bottom: 40rpx;
+  line-height: 1.5;
+}
+
+/* 大按钮，方便室外点按 */
+.btn {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 24rpx;
+}
+
+.btn-primary {
+  background: #e94560;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #0f3460;
+  color: #fff;
+  border: 2rpx solid #537fe7;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #b8c1ec;
+  border: 2rpx solid #4a4e69;
+}
+
+.card {
+  background: #1a1a2e;
+  border-radius: 20rpx;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.input {
+  width: 100%;
+  height: 88rpx;
+  background: #0f3460;
+  color: #fff;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.tip {
+  font-size: 24rpx;
+  color: #8892b0;
+  line-height: 1.6;
+}
